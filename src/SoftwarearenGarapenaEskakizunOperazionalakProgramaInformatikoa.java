@@ -1,3 +1,12 @@
+/**
+ * SOFTWARE ZIKLOAREN FASEAK:
+ * 1. Analisia: proiektua aztertu eta eskatutako guztia barneratu
+ * 2. Diseinua: behin zertan datza jakinda, eskatutako guztiaren diseinua egin (fluxu diagrama, mockup, datu-base diagramak...).
+ * 3. Kodetzea: benetako proektua martxan jartzen.
+ * 4. Frogak: akatsak bilatu egindako lana frogatuz.
+ * @param args
+ */
+
 import java.util.Scanner;
 
 public class SoftwarearenGarapenaEskakizunOperazionalakProgramaInformatikoa {
