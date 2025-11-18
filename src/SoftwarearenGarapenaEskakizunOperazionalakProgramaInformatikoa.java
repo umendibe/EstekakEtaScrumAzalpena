@@ -10,7 +10,7 @@ public class SoftwarearenGarapenaEskakizunOperazionalakProgramaInformatikoa {
 
     public static void main(String[] args) {
         eskakizunFuntzionalak();
-        
+        eskakizunEzFuntzionalak();
     }
 
     public static void eskakizunFuntzionalak() {
@@ -19,5 +19,10 @@ public class SoftwarearenGarapenaEskakizunOperazionalakProgramaInformatikoa {
                 + "Demagun web orri bat eskatu duela, kasu honetan bere zine enpresarako. Esan digu webak izan behar duela hainbat atal (kartelera, saskia...) eta saskia atalan adibidez sarrerak erosteko funtzionalitatea sartzea eskatu digu. Interaktuatzeko funtzio bat denez, eskakizun funtzionala dela esan daiteke.");
     }
 
+    public static void eskakizunEzFuntzionalak() {
+        System.out.println(ANSI_RED + "\nESKAKIZUN EZ-FUNTZIONALAK: " + ANSI_WHITE +
+        "Eskakizun ez funtzionalak interaktuaziorik ez dituzten eskakizunak dira. Adibidez bezeroak zenbateko denbora epean proiektua egitea eskatu digun, zenbateko aurrekontua dugun..." + 
+        "Ikusten denez, ez dira iterazioak web orriarekin, baizik eta atzetikan dauden beste eskakizunak.");
+    }
     
 }
