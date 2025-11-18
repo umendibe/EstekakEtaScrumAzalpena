@@ -7,6 +7,18 @@
  * @param args
  */
 
+ /**
+  * DEBUGGERRA: 
+  *Buklean erabiltzea egokiena da, dena ondo doala zihurtatzeko.
+  *Adibidez bukleko case 1-eko break lerroan jartzean eta ej¡xekutatzean behin lehen aukerari emanda eta ondoren errepikatzeko galdetzen duenean baiezkoa ematen duzunean, argi ikus daiteke errepikatzea true dela, beraz programa berriz exekutatuko da.
+  *Beste kasuetan berdina gertatuko da, programa honen gakoa berriz exekutatzea da, metodoak ez dutelako ezer ez itzultzen, bakarrik inprimaketak egiten dituztelako, orduan while eta switch ondo joatea zailagoa da eta gehiago hartu behar dira kontuan.
+  * @param args 
+  */
+
+  /**
+   * BIRFAKTORIZAZIOA
+   *@param args
+   */
 import java.util.Scanner;
 
 public class SoftwarearenGarapenaEskakizunOperazionalakProgramaInformatikoa {
