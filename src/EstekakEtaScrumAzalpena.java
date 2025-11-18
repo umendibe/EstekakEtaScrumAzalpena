@@ -18,7 +18,11 @@ public class EstekakEtaScrumAzalpena {
     }
 
     public static void scrumAzalpena() {
-        System.out.println(ANSI_BLUE + "Zertan datza Scrum metodologia?" + ANSI_WHITE);
-        System.out.println("Scrum metodologia erabiltzen hasi zen era ordenatuago batean lan egiteko, jendea konturatu izan zelako planifikaziorik gabe programa bat egiten jartzea ez zituela emaitza onak ematen.");
+        System.out.println(ANSI_BLUE + "Zer da Scrum metodologia?" + ANSI_WHITE);
+        System.out.println("Scrum metodologia erabiltzen hasi zen era ordenatuago batean lan egiteko, jendea konturatu izan zelako planifikaziorik gabe programa bat egiten jartzea ez zituela emaitza onak ematen.\n" + 
+        "Scrum talde lanean oinarritzen da, eta horretarako lehenik eta behin taldeko rolak ezartzea bermatzen du. Rolak honakoak dira: \n" + 
+        "Product Owner: egin beharreko atazak zehazten dituen pertsona, estareako nagusi moduko bat. \n" + 
+        "Scrum Master: proiektua ondo joatea bermatzen duena. \n" + 
+        "Development team: proiektuan lan egingo duten kideak.");
     }
 }
