@@ -12,24 +12,34 @@ public class SoftwarearenGarapenaEskakizunOperazionalakProgramaInformatikoa {
 
     static Scanner sc;
     static int aukeraMenu;
-
+    static boolean errepikatu = true;
     public static void main(String[] args) {
-        
-        Menua();
+        sc = new Scanner(System.in);
+
+        while (errepikatu) {
+            Menua();
             switch (aukeraMenu) {
                 case 1:
                     eskakizunFuntzionalak();
+                    errepikatu();
                     break;
             
                     case 2: 
                     eskakizunEzFuntzionalak();
+                    errepikatu();
                     break;
 
                     case 3:
+                    programaInformatikoa();
+                    errepikatu();
+                    break;
 
                 default: System.out.println(ANSI_RED + "ERROREA: aukeratu zenbaki egoki bat." + ANSI_WHITE);
                     break;
             }
+        }
+        
+            sc.close();
         };
 
     
@@ -48,16 +58,32 @@ public class SoftwarearenGarapenaEskakizunOperazionalakProgramaInformatikoa {
     }
 
     public static void programaInformatikoa() {
+        System.out.println(ANSI_YELLOW + "\nPROGRAMA INFORMATIKOA: \n" + ANSI_WHITE + 
+        "Programa informatikoa kodetuz egiten den programa da. Edozertarako egindako programak izan daitezke, norbaitek eskatutako zerbaitetarako (bezero batek bere enpresarentzako eskatu ahal dizun zerbat) edo norberak beregan egindako programa (adibidez web bat norbait egin nahi bere kabuz jendearentzat)." + 
+        "Softwerearekin zer ikusia du, azkenean kode interno bat delako eta CPU-aren bidez exekutatzen dena (adibidez javako programa hau). 2 software mota bereizi daitezke: \n" +
+        "- Software librea: edonork erabil dezakeena, doainik da eta haren bertsioak editagarriak dira. \n" + 
+        "- Software pribatua: ordaindu behar dira, ez dira editagarriak eta segurtasun gehiago dute.");
 
     }
-    
+
     public static void Menua() {
-        System.out.println(ANSI_PURPLE + "AUKERATU BAT" + ANSI_WHITE +
+        System.out.println(ANSI_PURPLE + "AUKERATU BAT\n" + ANSI_WHITE +
                 "1. Eskakizun Funztionalak\n" +
                 "2. Eskakizun Ez-Funtzionalak\n" +
                 "3. Programa Informatikoa");
 
         aukeraMenu = sc.nextInt();
+    }
+
+    public static void errepikatu() {
+        System.out.println(ANSI_CYAN + "BESTE OPERAZIOREN BAT EGIN NAHI DUZU? bai/ez" + ANSI_WHITE);
+        String errepikatuAukera = sc.next();
+
+        if (errepikatuAukera.equals("bai")) {
+            errepikatu = true;
+        } else {
+            errepikatu = false;
+        }
     }
 
 }
