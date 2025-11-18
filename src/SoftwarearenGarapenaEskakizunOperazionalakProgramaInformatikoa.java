@@ -16,7 +16,14 @@
   */
 
   /**
-   * BIRFAKTORIZAZIOA
+   * BIRFAKTORIZAZIOA:
+   * Programa behin eta berriz exekutatzen egon beharrean, while batekin bukle bat sortu dut, erabiltzaileak erabakitzen duenerarte --> 56. lerroa
+   * Main metodoa garbiagoa egoteko, beste metodoak erabili ditut:
+   * 1. eskakizunFuntzionalak() izeneko metodoa informazioa inprimitzeko --> 90. lerroa 
+   * 2. eskakizunEzFuntzionalak() izeneko metodoa informazioa inprimitzeko --> 96. lerroa
+   * 3. programaInformatikoa() izeneko metodoa informazioa inprimitzeko --> 103. lerroa
+   * 4. Menua() izeneko metodoa menuko aukerak inprimatzeko eta gordetzeko --> 112. lerroa
+   * 5. errepikatu() izeneko metodoa errepikatzeko galdera egiteko eta erantzuna gordetzeko --> 121. lerroa
    *@param args
    */
 import java.util.Scanner;
