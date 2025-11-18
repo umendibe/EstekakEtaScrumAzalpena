@@ -10,31 +10,45 @@ public class SoftwarearenGarapenaEskakizunOperazionalakProgramaInformatikoa {
     public static final String ANSI_PURPLE = "\u001B[35m";
     public static final String ANSI_CYAN = "\u001B[36m";
     public static final String ANSI_WHITE = "\u001B[37m";
-
+    /**Bariable Publikoak:
+     * Klase guztian zehar erabili izandako bariableak 
+     * Orokorrak dira.
+     */
     static Scanner sc;
     static int aukeraMenu;
     static boolean errepikatu = true;
+    /**
+     * Main metodoa: bukle bat erabiltzaileak nahi duen arte:
+     * @param args
+     */
     public static void main(String[] args) {
+        /**Scanner sortzen */
         sc = new Scanner(System.in);
-
+        /** Buklea*/
         while (errepikatu) {
-            Menua();
+            Menua();//Menua metodoa
             switch (aukeraMenu) {
                 case 1:
+                /**Eskakizun funtzionalak inprimatzen duen metodoa */
                     eskakizunFuntzionalak();
+                    /**Errepikatzea galdetu */
                     errepikatu();
                     break;
             
                     case 2: 
+                    /**Eskakizun ez funtzionalak inprimatzen duen metodoa */
                     eskakizunEzFuntzionalak();
+                    /**Errepikatzea galdetu */
                     errepikatu();
                     break;
 
                     case 3:
+                    /**Programa informatikoaren azalpena inprimatzen duen metodoa */
                     programaInformatikoa();
+                    /**Errepikatzea galdetu */
                     errepikatu();
                     break;
-
+                /**Errore kasua: aukera desegokia bada inprimatutakoa */
                 default: System.out.println(ANSI_RED + "ERROREA: aukeratu zenbaki egoki bat." + ANSI_WHITE);
                     break;
             }
@@ -44,7 +58,7 @@ public class SoftwarearenGarapenaEskakizunOperazionalakProgramaInformatikoa {
         };
 
     
-
+        
     public static void eskakizunFuntzionalak() {
         System.out.println(ANSI_RED + "\nESKAKIZUN FUNTZIONALAK: \n" + ANSI_WHITE +
                 "Eskakizun funztionalak bezero batek produktu bat eskatzen duenean hark bere bezeroeri eskeini diezaiokeen funtzionalitateak dira. Adibide batekin azaltzea errazagoa da. "
