@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class SoftwarearenGarapenaEskakizunOperazionalakProgramaInformatikoa {
     public static final String ANSI_BLACK = "\u001B[30m";
     public static final String ANSI_RED = "\u001B[31m";
@@ -8,10 +10,29 @@ public class SoftwarearenGarapenaEskakizunOperazionalakProgramaInformatikoa {
     public static final String ANSI_CYAN = "\u001B[36m";
     public static final String ANSI_WHITE = "\u001B[37m";
 
+    static Scanner sc;
+    static int aukeraMenu;
+
     public static void main(String[] args) {
-        eskakizunFuntzionalak();
-        eskakizunEzFuntzionalak();
-    }
+        
+        Menua();
+            switch (aukeraMenu) {
+                case 1:
+                    eskakizunFuntzionalak();
+                    break;
+            
+                    case 2: 
+                    eskakizunEzFuntzionalak();
+                    break;
+
+                    case 3:
+
+                default: System.out.println(ANSI_RED + "ERROREA: aukeratu zenbaki egoki bat." + ANSI_WHITE);
+                    break;
+            }
+        };
+
+    
 
     public static void eskakizunFuntzionalak() {
         System.out.println(ANSI_RED + "\nESKAKIZUN FUNTZIONALAK: \n" + ANSI_WHITE +
@@ -21,8 +42,22 @@ public class SoftwarearenGarapenaEskakizunOperazionalakProgramaInformatikoa {
 
     public static void eskakizunEzFuntzionalak() {
         System.out.println(ANSI_RED + "\nESKAKIZUN EZ-FUNTZIONALAK: " + ANSI_WHITE +
-        "Eskakizun ez funtzionalak interaktuaziorik ez dituzten eskakizunak dira. Adibidez bezeroak zenbateko denbora epean proiektua egitea eskatu digun, zenbateko aurrekontua dugun..." + 
-        "Ikusten denez, ez dira iterazioak web orriarekin, baizik eta atzetikan dauden beste eskakizunak.");
+                "Eskakizun ez funtzionalak interaktuaziorik ez dituzten eskakizunak dira. Adibidez bezeroak zenbateko denbora epean proiektua egitea eskatu digun, zenbateko aurrekontua dugun..."
+                +
+                "Ikusten denez, ez dira iterazioak web orriarekin, baizik eta atzetikan dauden beste eskakizunak.");
+    }
+
+    public static void programaInformatikoa() {
+
     }
     
+    public static void Menua() {
+        System.out.println(ANSI_PURPLE + "AUKERATU BAT" + ANSI_WHITE +
+                "1. Eskakizun Funztionalak\n" +
+                "2. Eskakizun Ez-Funtzionalak\n" +
+                "3. Programa Informatikoa");
+
+        aukeraMenu = sc.nextInt();
+    }
+
 }
