@@ -11,6 +11,7 @@ public class EstekakEtaScrumAzalpena {
     public static void main(String[] args) {
         estekakInprimatu();
         scrumAzalpena();
+        nolaInplementatu();
     }
 
     public static void estekakInprimatu() {
